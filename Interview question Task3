@@ -1,0 +1,91 @@
+1. What is a GET request?
+
+A GET request is an HTTP method used to request data from a server. It retrieves resources like HTML pages, images, or APIs without making any changes on the server.
+
+🧠 Example in Python:
+
+requests.get("https://example.com")
+
+2. How do you install external packages in Python?
+
+You use pip, Python's package manager.
+
+🧠 Example:
+
+pip install requests beautifulsoup4
+
+3. What is a User-Agent in HTTP?
+
+A User-Agent is a string sent in HTTP headers that identifies the client's application (e.g., browser or script). Websites use it to tailor responses or block bots.
+
+🧠 Example:
+
+headers = {"User-Agent": "Mozilla/5.0"}
+requests.get(url, headers=headers)
+
+4. What is soup.find_all() used for?
+
+soup.find_all() is a BeautifulSoup method that returns a list of all matching tags in an HTML page.
+
+🧠 Example:
+
+soup.find_all("h2")  # Finds all <h2> tags
+
+5. What are the risks of web scraping?
+
+Legal risks: Some sites prohibit scraping in their Terms of Service.
+
+IP blocking: Excessive requests can get your IP blocked.
+
+Ethical concerns: Overloading a server can harm small websites.
+
+Data changes: Website structure can change, breaking your scraper.
+
+6. What’s the difference between id and class in HTML?
+Feature	id	class
+Use	Uniquely identifies one element	Groups multiple elements
+Syntax	id="header"	class="menu"
+Unique?	Yes (should appear once)	No (can appear multiple times)
+7. What is an HTML tag?
+
+An HTML tag is a markup element used to define the structure and content of a webpage.
+
+🧠 Example:
+
+<h1>Headline</h1>
+
+
+<h1> is a tag that defines a level-1 heading.
+
+8. What does .text return in BeautifulSoup?
+
+.text returns the inner text of an element, stripped of HTML tags.
+
+🧠 Example:
+
+soup.find("h1").text  # Returns: 'Top News Today'
+
+9. What is a try-except block?
+
+A try-except block is used to handle errors in Python without crashing the program.
+
+🧠 Example:
+
+try:
+    risky_code()
+except Exception as e:
+    print("Error occurred:", e)
+
+10. What are HTTP status codes?
+
+HTTP status codes indicate the result of an HTTP request.
+
+Common ones:
+
+200 OK – Success
+
+404 Not Found – Page doesn’t exist
+
+403 Forbidden – Access denied
+
+500 Internal Server Error – Server crashed
